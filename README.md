@@ -1,4 +1,4 @@
-# thelastous
+# The last of us
 repositorio para probar ideas
 
 He estado jugando con animaciones para añadir movimiento a imagenes svg, añadir audio, de mi juego favorito :)
