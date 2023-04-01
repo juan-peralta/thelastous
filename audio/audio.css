@@ -1,0 +1,26 @@
+#audio-controls {
+    position: absolute;
+    top: 18px;
+  }
+  
+  #audio-controls button {
+    background: black;
+    background-image: url(../svg/play.svg); /* icono de play */
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #audio-controls button.playing {
+    background-image: url(../svg/pause.svg); /* icono de pause */
+    background-repeat: no-repeat;
+  }
+  
+  audio {
+    display: none;
+  }
+ 

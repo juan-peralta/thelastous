@@ -1,0 +1,24 @@
+#my-svg{
+    right:10%;
+}
+#my-svg2{
+    left: 38%;
+}
+  #my-svg{
+       display: none;
+    }
+    #my-svg2{
+        display: none;
+    }
+@media (max-width: 500px) {
+  
+}
+
+.caja-joel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rostrojoel{
+    margin-top: 55px;
+}

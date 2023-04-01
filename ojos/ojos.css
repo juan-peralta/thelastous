@@ -1,0 +1,21 @@
+#canvas{
+    position: absolute;
+    left: 35%;
+    z-index: 1;
+    
+}
+@media (min-width:500px){
+  
+    #ojo1,#ojo2{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    #canvas{
+        display: none;
+    }
+    .caja-joel{
+        max-width: 350px;
+    }
+}
+

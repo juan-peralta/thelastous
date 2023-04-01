@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="svg/svg.css">
+  <link rel="stylesheet" href="audio/audio.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/ojos/ojos.css">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+</style>
+<body>
+
+  <header>
+
+    <button id="menu-toggle">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+
+  </header>
+
+  <div id="off-canvas-menu">
+
+    <nav>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <main>
+    <audio id="my-audio" controls src="thelastofus.mp3" style="z-index: 99999999;"></audio>
+    <div id="audio-controls">
+      <button id="play-pause-button"></button>
+    </div>
+    <img src="planta.jpg" class="img-fondo" alt="">
+    <img src="/svg/Ellipse 1.svg" id="ellipse" class="ellipse" alt="">
+    <img src="/svg/Ellipse 1.svg" id="ellipse2" class="ellipse" alt="">
+    <img src="/svg/Ellipse 1.svg" id="fueguito" class="ellipse" alt="">
+    <img src="/svg/Ellipse 1.svg" id="fueguito2" class="ellipse" alt="">
+    <div class="svg-container">
+
+
+
+      <svg id="my-svg" width="289" height="550" viewBox="0 0 289 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" width="176" height="447" fill="#D9D9D9" fill-opacity="0.19" />
+        <path d="M229.171 525.986L117.212 395.69L219.187 354.486L229.171 525.986Z" fill="#8A8686" fill-opacity="0.27" />
+        <path d="M61.4914 533.981L48.8488 362.657L155.355 390.101L61.4914 533.981Z" fill="#8A8686"
+          fill-opacity="0.27" />
+      </svg>
+
+      <svg width="282" id="my-svg2" class="svg2" height="664" viewBox="0 0 282 664" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x="43" width="176" height="561" fill="#D9D9D9" fill-opacity="0.19" />
+        <path d="M222.171 639.986L110.212 509.69L212.187 468.486L222.171 639.986Z" fill="#8A8686" fill-opacity="0.27" />
+        <path d="M99.9663 649.841L18.1685 498.775L126.56 480.122L99.9663 649.841Z" fill="#8A8686" fill-opacity="0.27" />
+      </svg>
+
+    </div>
+
+    <div class="container">
+      <div class="caja-joel">
+        <canvas id="canvas" width="500px" height="300px"></canvas>
+
+          <svg width="400" id="rostrojoel" height="400" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M36 22.2466C36 27.3127 35.951 31.9052 34.7796 35.2364C34.1995 36.8859 33.3555 38.1889 32.1351 39.0837C30.9163 39.9773 29.2726 40.5 27.0263 40.5C22.5186 40.5 17.4991 38.3907 13.6019 35.0239C9.70525 31.6576 7 27.0966 7 22.2466C7 12.4467 15.368 4.5 24.3947 4.5C26.6449 4.5 28.474 4.99333 29.957 5.86496C31.4401 6.73673 32.6043 8.00298 33.5001 9.59005C35.3003 12.7797 36 17.2376 36 22.2466Z" fill="#E6BA9D" stroke="black"/>
+        <path d="M25.5 20C25.5 20.0508 25.4889 20.0743 25.4792 20.0893C25.467 20.1083 25.4366 20.1439 25.3601 20.1873C25.1936 20.2816 24.8994 20.3634 24.4348 20.4176C23.664 20.5074 22.6093 20.5047 21.3033 20.5013C21.0453 20.5007 20.7774 20.5 20.5 20.5C20.2226 20.5 19.9547 20.5007 19.6967 20.5013C18.3907 20.5047 17.336 20.5074 16.5652 20.4176C16.1006 20.3634 15.8064 20.2816 15.6399 20.1873C15.5634 20.1439 15.533 20.1083 15.5208 20.0893C15.5111 20.0743 15.5 20.0508 15.5 20C15.5 19.8784 15.567 19.6589 15.7894 19.3705C16.0045 19.0915 16.335 18.7884 16.776 18.5075C17.656 17.947 18.9378 17.5 20.5 17.5C22.0622 17.5 23.344 17.947 24.224 18.5075C24.665 18.7884 24.9955 19.0915 25.2106 19.3705C25.433 19.6589 25.5 19.8784 25.5 20Z" fill="white" stroke="black"/>
+        <path d="M37.9984 19.9637C37.9968 19.9645 37.995 19.9652 37.9932 19.9659C37.8795 20.0132 37.6575 20.0502 37.2718 20.0608C36.9001 20.0711 36.4405 20.0566 35.8843 20.0386L35.864 20.038C35.3181 20.0203 34.691 20 34 20C33.309 20 32.6819 20.0203 32.136 20.038L32.1157 20.0386C31.5595 20.0566 31.0999 20.0711 30.7282 20.0608C30.3427 20.0502 30.1208 20.0133 30.0069 19.966C30.0136 19.9414 30.0267 19.903 30.0523 19.8497C30.099 19.7524 30.1752 19.6309 30.2852 19.4918C30.5049 19.2139 30.8351 18.8963 31.2551 18.5962C32.0975 17.9943 33.248 17.5 34.5 17.5C35.7379 17.5 36.6147 17.9828 37.1843 18.5452C37.4718 18.829 37.6806 19.133 37.8157 19.4045C37.9407 19.6557 37.9895 19.8521 37.9984 19.9637Z" fill="white" stroke="black"/>
+        <circle id="ojo1" cx="23" cy="18.5" r="0.5" fill="black"/>
+        <circle id="ojo2" cx="36" cy="18.5" r="0.5" fill="black"/>
+        <path d="M13 13H25L26 16H11L13 13Z" fill="black"/>
+        <path d="M29.5667 13H35.9667L36.5 16H28.5L29.5667 13Z" fill="black"/>
+        <path d="M26.5 17.5L27.5 15L34 30L32 31.5L26 29.5L26.5 17.5Z" fill="#CA9069"/>
+        <path d="M5 28.5L1 25V14.5L3 6L17.5 1H26L34 2L38.5 6V10L34 8.5L38.5 14.5L26 6H17.5L13.5 8.5L9 14.5L8 18V25L11.5 28.5L16 34L21.5 30H26H29L32 32.5L34 30L40.5 34V40.5L36 43.5H21.5L16 40.5L3 32.5L5 28.5Z" fill="#333333"/>
+        <path d="M5 28.5L6 19L3 17L1 14.5M5 28.5L1 25V14.5M5 28.5L3 32.5L16 40.5L21.5 43.5H36L40.5 40.5V34L34 30L32 32.5L29 30H26H21.5L16 34L11.5 28.5L8 25V18L9 14.5L13.5 8.5L17.5 6H26L38.5 14.5L34 8.5L38.5 10V6L34 2L26 1H17.5L3 6L1 14.5" stroke="black"/>
+        <path d="M29 34.5C29 35.0523 28.0523 35 27.5 35C26.9477 35 26 35.0523 26 34.5C26 33.9477 26 34 27.5 33C28.0523 33 29 33.9477 29 34.5Z" fill="#630C0C"/>
+        <path d="M13.75 21.625C13.448 21.6628 13.6548 22.8095 13.75 23C14.0084 23.5168 14.7244 24.0748 15.25 24.25" stroke="#010001" stroke-linecap="round"/>
+        <path d="M25.5 21.75C24.8108 22.1149 24.2269 22.6058 23.6181 23.0625C23.2603 23.3308 23.0209 23.875 22.5 23.875" stroke="#010001" stroke-linecap="round"/>
+        <path d="M27.625 25.5C27.3295 25.5 26.7464 25.3928 26.625 25.7569C26.5013 26.1281 26.2708 26.6255 26.25 27C26.1966 27.961 26.0293 28.6029 27 29.25" stroke="#010001" stroke-linecap="round"/>
+        <path d="M31.625 25.125C31.9603 25.6093 32.5117 25.8766 32.8194 26.3472C32.9941 26.6143 32.875 27.1941 32.875 27.5C32.875 28.1505 33.1329 28.8946 33.375 29.5" stroke="#010001" stroke-linecap="round"/>
+        <path d="M28.75 14.625C28.3984 13.746 28.7036 12.3893 29 11.5" stroke="#010001" stroke-linecap="round"/>
+        <path d="M25.25 14.75C25.25 14.366 25.3263 13.8736 25.1944 13.5C24.9217 12.7273 24.3689 12.0396 24.0833 11.2431C23.8844 10.6882 23.624 9.87481 23 9.75" stroke="#010001" stroke-linecap="round"/>
+        </svg>
+      </div>
+    
+        
+        
+       
+    </div>
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+  <script src="js/index.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/joel.js"></script>
+  <script src="js/rostrojoel.js"></script>
+  <script src="js/ojos.js"></script>
+</body>
+
+
+</html>
